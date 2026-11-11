@@ -1,12 +1,12 @@
 from datetime import date, timedelta
 
-import book_repository
-import loan_repository
-import member_repository
+from books import book_repository
+from members import member_repository
 import notifications
 import validation
 from errors import bad_request, conflict, not_found
 from fines import fine_for, money
+from . import loan_repository
 
 
 LOAN_PERIOD_DAYS = 14

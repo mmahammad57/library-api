@@ -2,12 +2,12 @@ import os
 
 from flask import Flask, jsonify
 
-import book_routes
-import loan_routes
-import member_routes
-import report_routes
+from books import book_routes
 from db import init_db
 from errors import LibraryError
+from loans import loan_routes
+from members import member_routes
+from reports import report_routes
 
 app = Flask(__name__)
 app.register_blueprint(book_routes.bp)

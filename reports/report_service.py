@@ -1,10 +1,9 @@
 from datetime import date
 
-import book_repository
-import loan_repository
-import report_repository
-import loan_service
+from books import book_repository
+from loans import loan_repository, loan_service
 from fines import fine_for, money
+from . import report_repository
 
 
 def overdue_report():

@@ -1,9 +1,8 @@
-import loan_repository
-import member_repository
-import loan_service
+from loans import loan_repository, loan_service
 import validation
 from errors import bad_request, conflict, not_found
 from fines import money
+from . import member_repository
 
 
 def list_members():
